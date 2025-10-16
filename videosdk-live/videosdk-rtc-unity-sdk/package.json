@@ -1,0 +1,13 @@
+{
+  "name": "live.videosdk.unity",
+  "version": "2.1.0",
+  "displayName": "VideoSDK",
+  "description": "VideoSDK allows you to integrate real-time in-game communication, enhancing player interaction and engagement.",
+  "documentationUrl": "https://docs.videosdk.live/unity/api/sdk-reference/setup",
+  "licensesUrl": "https://github.com/videosdk-live/videosdk-rtc-unity-sdk/blob/main/LICENSE.md",
+  "author": {
+    "name": "VideoSDK Admin",
+    "email": "admin@videosdk.live",
+    "url": "https://github.com/videosdkadmin"
+  }
+}

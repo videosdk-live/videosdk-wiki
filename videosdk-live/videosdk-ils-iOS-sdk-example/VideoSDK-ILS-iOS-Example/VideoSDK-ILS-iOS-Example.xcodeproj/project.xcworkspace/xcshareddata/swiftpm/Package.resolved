@@ -1,0 +1,51 @@
+{
+  "originHash" : "861bbe2bcefc01902daf508f64a203e5714eea006c79734c1a04a8fe366ee03b",
+  "pins" : [
+    {
+      "identity" : "emojipicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kelvas09/EmojiPicker.git",
+      "state" : {
+        "revision" : "d787591e2121b617209172ad6a8ebf2975f605ae",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "inputbaraccessoryview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nathantannar4/InputBarAccessoryView",
+      "state" : {
+        "revision" : "dfdc822b0d4a0d1b5777100347c399069e9bfc62",
+        "version" : "7.0.0"
+      }
+    },
+    {
+      "identity" : "messagekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MessageKit/MessageKit",
+      "state" : {
+        "revision" : "dc48356f830d40de5acc0e126a44257d0a1329b6",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "smile",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onmyway133/Smile",
+      "state" : {
+        "revision" : "40604722a7a56f735124e069fcbb58307637744b",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "videosdk-rtc-ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/videosdk-live/videosdk-rtc-ios-spm",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e53accfdd8edd2ae4e7e24ada915a21e2d5355bd"
+      }
+    }
+  ],
+  "version" : 3
+}

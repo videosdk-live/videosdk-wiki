@@ -1,0 +1,131 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="VideoSDK CallKit Example"
+        app:titleTextColor="@color/white"
+        android:background="?attr/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:layout_weight="1">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#E7E1E1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Caller ID"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:layout_margin="8dp"
+            android:clipToOutline="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txt_callId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Id"
+                android:textSize="32sp"
+                android:textColor="@color/black"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:textIsSelectable="true"
+                android:clipToOutline="true"
+                />
+
+            <ImageView
+                android:id="@+id/copyIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_content_copy_24"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:backgroundTint="#E7E1E1"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter call ID of user you want to call"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/caller_id_input"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:hint="Enter Caller ID"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
