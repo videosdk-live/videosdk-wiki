@@ -1,0 +1,43 @@
+<div *ngIf="showJoinScreen">
+  <app-join-screen
+    (validateMeeting)="validateMeeting($event)"
+    (createMeeting)="createMeeting()"
+  ></app-join-screen>
+</div>
+<div *ngIf="showMeetingScreen">
+  <!-- topbar STart -->
+  <app-top-bar
+    [meetingId]="meetingId"
+    [showTopBar]="showTopBar"
+    (toogleWebcam)="toogleWebcam()"
+    (toogleMic)="toogleMic()"
+    (toggleScreenShare)="toggleScreenShare()"
+    (leaveMeeting)="leaveMeeting()"
+  ></app-top-bar>
+  <!-- topbar End -->
+
+  <!-- Meeting Container -->
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      max-height: calc(100vh - 85px);
+    "
+  >
+    <div class="container">
+      <div
+        #participantGridContainer
+        id="participant-grid-container"
+        class="row"
+      ></div>
+      <div
+      #participantScreenShareContainer
+      id="participant-screen-container"
+      style="width:360px;aspect-ratio: 16/9;border-radius: 10px;display: none;"
+      ></div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
