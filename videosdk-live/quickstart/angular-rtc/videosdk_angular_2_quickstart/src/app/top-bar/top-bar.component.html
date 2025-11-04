@@ -1,0 +1,49 @@
+<div *ngIf="showTopBar" style="height: 65px; background-color: lightgray">
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+      margin-right: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      height: 100%;
+    "
+  >
+    <div>
+      <p style="margin-top: 0px; margin-bottom: 0px; font-weight: 700">
+        MeetingId: {{ meetingId }}
+      </p>
+    </div>
+    <div style="display: flex; margin-top: 8px">
+      <button style="cursor: pointer" (click)="fireToggleWebcam()">
+        Toggle Webcam
+      </button>
+      <button
+        style="margin-left: 4px; cursor: pointer"
+        (click)="fireToggleMic()"
+      >
+        Toggle Mic
+      </button>
+      <button
+      style="margin-left: 4px; cursor: pointer"
+      (click)="fireToggleScreenShare()"
+    >
+      Toggle Screen Share
+    </button>
+      <button
+        style="
+          max-width: max-content;
+          margin-left: 4px;
+          cursor: pointer;
+          background-color: red;
+          color: white;
+          border: 2px solid red;
+        "
+        (click)="fireLeaveMeeting()"
+      >
+        Leave Meeting
+      </button>
+    </div>
+  </div>
+</div>
